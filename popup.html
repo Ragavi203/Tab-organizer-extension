@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    
+    button:hover {
+      background: #3367d6;
+    }
+    
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+    
+    #status {
+      text-align: center;
+      color: #666;
+      margin-top: 10px;
+    }
+    
+    .loading {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>Tab Chaos Manager</h2>
+  <button id="organizeBtn">Organize My Tabs</button>
+  <div id="status"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

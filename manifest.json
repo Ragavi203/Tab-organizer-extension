@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Chaos Manager",
+  "version": "1.0",
+  "description": "AI-powered tab organization",
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.anthropic.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Organize my tabs!"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
